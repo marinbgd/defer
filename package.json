@@ -1,10 +1,12 @@
 {
-  "name": "defer",
+  "name": "@marinbgd/defer",
   "version": "0.1.0",
   "description": "Library to create deferred objects - promise based",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "babel src/index.js --out-file build/index.js --no-babelrc --presets=@babel/preset-env",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "defer",
@@ -13,6 +15,10 @@
   ],
   "author": "Vladimir Marinovic",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marinbgd/defer.git"
+  },
   "devDependencies": {
     "@babel/cli": "7.7.0",
     "@babel/core": "7.7.2",
