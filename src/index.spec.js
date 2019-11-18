@@ -1,4 +1,4 @@
-import { createDeferred } from './index'
+import createDeferred from './index'
 
 describe('defer', () => {
 

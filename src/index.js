@@ -4,7 +4,7 @@
  * @returns {{resolve, reject, promise}}
  */
 
-export const createDeferred = () => {
+const createDeferred = () => {
   return (() => {
     let publicResolve
     let publicReject
@@ -22,3 +22,4 @@ export const createDeferred = () => {
   })()
 }
 
+export default createDeferred
